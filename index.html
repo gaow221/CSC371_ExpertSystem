@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job Qualification Expert System</h1>
+    
+    <form id="expertForm">
+        <label>Have you completed Python coursework?</label>
+        <select id="python_course">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Have you completed Software Engineering coursework?</label>
+        <select id="software_engineering_course">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Highest degree obtained:</label>
+        <select id="degree">
+            <option value="none">None</option>
+            <option value="bachelor">Bachelor in Computer Science</option>
+            <option value="master">Master in Computer Science</option>
+        </select>
+
+        <label>Years of Python development experience:</label>
+        <input type="number" id="python_experience" min="0">
+
+        <label>Years of data development experience:</label>
+        <input type="number" id="data_experience" min="0">
+
+        <label>Do you have experience in Agile projects?</label>
+        <select id="agile_experience">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Years of managing software projects:</label>
+        <input type="number" id="project_management_experience" min="0">
+
+        <label>Years of managing Agile projects:</label>
+        <input type="number" id="agile_management_experience" min="0">
+
+        <label>Do you have PMI Lean Project Management Certification?</label>
+        <select id="pmi_certification">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Years of experience using Python to develop Expert Systems:</label>
+        <input type="number" id="expert_systems_experience" min="0">
+
+        <label>Years of experience in data architecture & development:</label>
+        <input type="number" id="data_architecture_experience" min="0">
+
+        <label>Have you used Git?</label>
+        <select id="used_git">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Have you completed an Agile course?</label>
+        <select id="agile_course">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="button" onclick="evaluateApplicant()">Check Eligibility</button>
+    </form>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+    <p id="bonus"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
